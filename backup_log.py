@@ -13,7 +13,7 @@ class BackupLog:
         3) end_path : str - путь до директории, куда будут сохраняться файлы
     """
 
-    def __init__(self, path_files: list, serial: str = "ZBS353535", end_path: str = f"{os.getcwd()}/"):
+    def __init__(self, path_files: list, serial: str = "ZBS352517", end_path: str = f"{os.getcwd()}/"):
         self.path_files = path_files
         self.modify_path_files = []
         self.serial = serial
@@ -84,7 +84,7 @@ class BackupLog:
 
 if __name__ == '__main__':
     path = [
-        "files\klippy.log",
-        "files\printer.cfg"
+        "/home/rock/klipper_logs/klippy.log",
+        "/home/rock/klipper_config/printer.cfg"
     ]
     BackupLog(path_files=path).main()
