@@ -3,15 +3,13 @@ import sys
 from backup_log import BackupLog
 
 path = [
-    "/run/media/vladislav/a4a3fb78-36b4-4827-8168-25f38beac446/"
-    "Test_GUI/LEARNING_PYTHON/moonraker_upload_files_v1-2/files/klippy.log",
-    "/run/media/vladislav/a4a3fb78-36b4-4827-8168-25f38beac446/"
-    "Test_GUI/LEARNING_PYTHON/moonraker_upload_files_v1-2/files/printer.cfg"
+    "/home/rock/klipper_logs/klippy.log",
+    "/home/rock/klipper_config/printer.cfg"
 ]
 
 
 def main():
-    BL = BackupLog(path_files=path, serial='ZBS350001')
+    BL = BackupLog(path_files=path, serial='ZBS352517')
     BL.main()
 
 
