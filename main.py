@@ -14,11 +14,12 @@ def main():
 
 
 if __name__ == '__main__':
-    inp = str(input("Введите Yes или No: "))
-    match inp:
-        case "Yes":
-            main()
-        case "No":
-            sys.exit(1)
-        case _:
-            print("Неизвестная команда!")
+    main()
+    # inp = str(input("Введите Yes или No: "))
+    # match inp:
+    #     case "Yes":
+    #         main()
+    #     case "No":
+    #         sys.exit(1)
+    #     case _:
+    #         print("Неизвестная команда!")
